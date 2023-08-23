@@ -29,6 +29,7 @@ Navigate to the `DataInsights` directory to see how I integrate data analysis an
 I'm excited to collaborate and connect with fellow developers, clients, and tech enthusiasts! Feel free to reach out for discussions, inquiries, or potential opportunities. Let's turn ideas into reality and drive innovation together.
 
 Contact me at:
+
 - Email: [your.email@example.com](mailto:your.email@example.com)
 - LinkedIn: [Your Name](https://www.linkedin.com/in/yourname)
 - Portfolio Website: [www.yourportfolio.com](https://www.yourportfolio.com)
@@ -38,4 +39,3 @@ Thank you for exploring my Software Engineering Portfolio. I hope you find inspi
 Happy coding,
 
 [Your Name]
-Software Engineer
