@@ -14,7 +14,7 @@ export default function About() {
         <SectionHeading>About me</SectionHeading>
         I am currently studying{" "}
         <span className="font-medium">Software engineering</span>, In Quebec, Canada{" "}
-        <span className="italic">My favorite part of programming</span>
+        <span className="italic">My favorite part of programming</span> is the
      
       </p>
     </motion.section>
