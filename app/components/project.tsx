@@ -1,18 +1,21 @@
 "use client";
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import SectionHeading from './section-heading'
 import { projectsData } from '../lib/data'
 import { StaticImageData } from 'next/image'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useSectionInView } from '../lib/hooks';
 
 
 export default function Projects() {
-  return (
-    <section>
-        <SectionHeading>Projects</SectionHeading>
+  const { ref } = useSectionInView("Projects", 0.75);
 
+  return (
+    <section ref={ref} id='projects' className='scroll-mt-28'>
+        <SectionHeading>Projects</SectionHeading>
+. 
         <div>
             {projectsData.map((project, index) => (
                 <React.Fragment key={index}>
