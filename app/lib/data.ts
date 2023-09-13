@@ -27,36 +27,57 @@ export const links = [
     name: "Experience",
     hash: "#experience",
   },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Ubisoft Tools Programmer",
+    title: "Tool Programmer Intern - Ubisoft",
     location: "Montreal, QC",
-    description:
-      "1st internship. I worked on tools to help devloppers analyze and understand contributions to the codebase of projects. I also worked on analyzer to ensure code quality and debug a few other tools from the team.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2023",
-  },
+    date: "1st May 2023 - 25 august 2023  17 weeks",
+    icon: React.createElement(CgWorkAlt),
+    description: [
+      "As a Tool Programmer Intern at Ubisoft, I've enhanced innersourcing processes, improved project visualization, and driven cross-platform demand. ",
+      " My strong communication skills and adaptability, honed during my time at Ubisoft, have contributed to project success. I'm well-versed in Agile Scrum",
+      "Embraced Test-Driven Development (TDD), collaborating with international teams, including colleagues from France, on D3.js integration in C#.",
+      "Notably, received callback offers from both my manager and Ubisoft, recognizing impactful contributions.",
+    ],
+    bulletspoints: [
+      "Collaborated with cross-functional teams, learning from various specialties.",
+      "Actively participated in coding projects beyond my own, contributing to the success of various initiatives collaborated with diverse teams, including international colleagues, to achieve project goals.",
+      "Demonstrated adaptability by overcoming unknown programming language and library limitations.",
+      "Earned admiration for effective communication skills, leading to increased project visibility and cross-platform demand.",
+      "Utilized a diverse skill set, including C#, JavaScript, .NET, Blazor, D3.js, XUnit, and more, to enhance project tooling.",
+    ],
+    tags: ["C#", "JavaScript", "MongoDB", ".NET", "XUnit", "Gitlab", "Microsoft SQL Server", " Blazor", "D3.js", "Test-Driven Development (TDD)"],
+
+  },  
   {
     title: "TODO",
     location: "Quebec, QC",
     description:
       "I.",
-    icon: React.createElement(CgWorkAlt),
+    bulletspoints: [
+        "Continuously improved contributions, showcasing commitment to personal and professional growth.",
+        "Effectively collaborated with diverse teams, including international colleagues, to achieve project goals."
+      ],
+    icon: React.createElement(LuGraduationCap),
     date: "2019 - 2021",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+
   },
   {
     title: "Full-Stack TODO",
     location: "Quebec, QC",
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
+      bulletspoints: [
+        "Continuously improved contributions, showcasing commitment to personal and professional growth.",
+        "Effectively collaborated with diverse teams, including international colleagues, to achieve project goals."
+      ],
+      icon: React.createElement(FaReact),
     date: "2021 - present",
+    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+
   },
 ] as const;
 
