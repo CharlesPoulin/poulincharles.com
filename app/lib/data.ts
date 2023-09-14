@@ -86,8 +86,8 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "This Website - React",
-    description:
-    [  "The reason for this projects was a to make sure i have portofolio website but to also explore other part of the react ecosystem. I used Next.js, TypeScript, Tailwind CSS and Framer Motion which i never used before.",
+    description:[
+      "The reason for this projects was a to make sure i have portofolio website but to also explore other part of the react ecosystem. I used Next.js, TypeScript, Tailwind CSS and Framer Motion which i never used before.",
       "I also used Vercel to deploy the website. But As you know I didnt use anything of this in my Internship at ubiosft I wanted to touche more of the more mainstream tech stacks.",
       "So after this projet and my internship i can pretty sure i can produce ecosystem agnostic code and i can adapt to any tech stack. which make any usage of website as interface a breeze.",
       "the website is also responsive and i used the mobile first approach. I wanted to make i use a tech stack that is common across the industry and that i can use in my internship.",

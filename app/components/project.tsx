@@ -28,7 +28,7 @@ export default function Projects() {
   )
 }
 
-function Project({ title, description, tags, imageUrl }: { title: string, description: string, tags: readonly string[], imageUrl: StaticImageData }) {
+function Project({ title, description, tags, imageUrl }: { title: string, description: string[], tags: readonly string[], imageUrl: StaticImageData }) {
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
       target: ref,
