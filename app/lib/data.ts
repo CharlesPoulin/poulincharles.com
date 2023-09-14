@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import thiswebsiteImg from "@/public/thiswebsite.png";
 
 export const links = [
   {
@@ -30,6 +31,22 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+   {
+    title: "Bachelors Degree in Software Engineering at Université Laval",
+    location: "Quebec, QC",
+    description:[
+      "I'm a second-year Software Engineering student at Université Laval, passionate about AI, game development, and quantum computing. ",
+      " I'm actively involved in AI-related groups and have a strong command of C++ and Python. ",
+      " My diverse interests drive my ambition to explore various career paths within the software engineering field."],
+
+    bulletspoints: [
+        "Member of the Aritifical Intelligence Club",
+      ],
+    icon: React.createElement(LuGraduationCap),
+    date: "Autumn 2022 - Winter 2026  4 years",
+    tags: ["C++", "Python", "Gantt"],
+
+  },
   {
     title: "Tool Programmer Intern - Ubisoft",
     location: "Montreal, QC",
@@ -48,26 +65,11 @@ export const experiencesData = [
       "Earned admiration for effective communication skills, leading to increased project visibility and cross-platform demand.",
       "Utilized a diverse skill set, including C#, JavaScript, .NET, Blazor, D3.js, XUnit, and more, to enhance project tooling.",
     ],
-    tags: ["C#", "JavaScript", "MongoDB", ".NET", "XUnit", "Gitlab", "Microsoft SQL Server", " Blazor", "D3.js", "Test-Driven Development (TDD)"],
-
+    tags: ["C#", "JavaScript", "MongoDB", ".NET Environnement", "XUnit", "Gitlab", "Microsoft SQL Server", " Blazor", "D3.js", "Test-Driven Development (TDD)","Css"],
   },  
   {
-    title: "TODO",
-    location: "Quebec, QC",
-    description:
-      "I.",
-    bulletspoints: [
-        "Continuously improved contributions, showcasing commitment to personal and professional growth.",
-        "Effectively collaborated with diverse teams, including international colleagues, to achieve project goals."
-      ],
-    icon: React.createElement(LuGraduationCap),
-    date: "2019 - 2021",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-
-  },
-  {
-    title: "Full-Stack TODO",
-    location: "Quebec, QC",
+    title: "Your Compagny",
+    location: "North America",
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
       bulletspoints: [
@@ -83,25 +85,22 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "This Website - React",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    [  "The reason for this projects was a to make sure i have portofolio website but to also explore other part of the react ecosystem. I used Next.js, TypeScript, Tailwind CSS and Framer Motion which i never used before.",
+      "I also used Vercel to deploy the website. But As you know I didnt use anything of this in my Internship at ubiosft I wanted to touche more of the more mainstream tech stacks.",
+      "So after this projet and my internship i can pretty sure i can produce ecosystem agnostic code and i can adapt to any tech stack. which make any usage of website as interface a breeze.",
+      "the website is also responsive and i used the mobile first approach. I wanted to make i use a tech stack that is common across the industry and that i can use in my internship.",
+      "I am aware of better new technologies like bun js and others "],
+    tags: ["Next.js", "Framer Motion", "TypeScript", "Tailwind CSS"],
+    imageUrl: thiswebsiteImg,
+  },
+  {
+    title: "Under construction",
+    description:
+      "Artificial intelligence (AI) is the ability of a computer program or a machine to think and learn. It is also a field of study which tries to make computers smart.",
+    tags: [],
     imageUrl: corpcommentImg,
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
   },
 ] as const;
 
@@ -112,10 +111,8 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
   "Git",
-  "Tailwind",
+  "Tailwind CSS",
   "SQL",
   "Python",
-  "Django",
 ] as const;
