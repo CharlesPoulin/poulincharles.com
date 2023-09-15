@@ -28,8 +28,15 @@ export default function Projects() {
   )
 }
 
-function Project({ title, description, tags, imageUrl }: { title: string, description: string[], tags: readonly string[], imageUrl: StaticImageData }) {
-    const ref = useRef<HTMLDivElement>(null);
+type ProjectProps = (typeof projectsData)[number];
+
+function Project({
+  title,
+  description,
+  tags,
+  imageUrl,
+}: ProjectProps) {
+  const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
       target: ref,
       offset: ["0 1", "1.33 1"],
