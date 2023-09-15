@@ -104,15 +104,14 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Git",
-  "Tailwind CSS",
-  "SQL",
-  "Python",
-] as const;
+const allTags: string[] = [
+  ...experiencesData.reduce((tags: string[], experience) => {
+    return tags.concat(experience.tags);
+  }, []),
+  ...projectsData.reduce((tags: string[], project) => {
+    return tags.concat(project.tags);
+  }, []),
+];
+
+export const skillsData = [...new Set(allTags)];
+
