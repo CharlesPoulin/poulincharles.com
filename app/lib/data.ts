@@ -35,16 +35,16 @@ export const experiencesData = [
     title: "Bachelors Degree in Software Engineering at Université Laval",
     location: "Quebec, QC",
     description:[
-      "I'm a second-year Software Engineering student at Université Laval, passionate about AI, game development, and quantum computing. ",
+      "I'm a second-year Software Engineering student at Université Laval, passionate about A.I., game development, and quantum computing. ",
       " I'm actively involved in AI-related groups and have a strong command of C++ and Python. ",
       " My diverse interests drive my ambition to explore various career paths within the software engineering field."],
 
     bulletspoints: [
-        "Member of the Aritifical Intelligence Club",
+        "Member of the Artifical Intelligence Club",
       ],
     icon: React.createElement(LuGraduationCap),
     date: "Autumn 2022 - Winter 2026  4 years",
-    tags: ["C++", "Python", "Gantt"],
+    tags: ["C++", "Python", "Gantt", "agile"],
 
   },
   {
@@ -65,20 +65,29 @@ export const experiencesData = [
       "Earned admiration for effective communication skills, leading to increased project visibility and cross-platform demand.",
       "Utilized a diverse skill set, including C#, JavaScript, .NET, Blazor, D3.js, XUnit, and more, to enhance project tooling.",
     ],
-    tags: ["C#", "JavaScript", "MongoDB", ".NET Environnement", "XUnit", "Gitlab", "Microsoft SQL Server", " Blazor", "D3.js", "Test-Driven Development (TDD)","Css"],
+    tags: ["C#", "JavaScript", "MongoDB", ".NET Environnement", "XUnit", "Gitlab", "Microsoft SQL Server", "Blazor", "D3.js", "Test-Driven Development (TDD)","Css"],
   },  
   {
     title: "Your Compagny",
     location: "North America",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I am actively researching for a Summer 2024 internship",
       bulletspoints: [
-        "Continuously improved contributions, showcasing commitment to personal and professional growth.",
-        "Effectively collaborated with diverse teams, including international colleagues, to achieve project goals."
+        "🚀 Proven track record of projets and practical experience.",
+        "🔍  Strong technical proficiency in C++/Rust, Python and .NET ecosystem",
+        "💡 Exceptional problem-solving skills, with a focus on innovation.",
+        "🌟 Demonstrated adaptability in diverse tech environments.",
+        "📈 Ready to contribute and learn at your compagny for a successful Summer 2024 internship",
+        "",
+        "📊 Hands-on experience with cutting-edge technologies like Blazor, D3.js, and more.",
+        "🌐 Effective in cross-functional teams, fostering project success.",
+        "💪 Agile Scrum and Test-Driven Development (TDD) enthusiast.",
+        "📜 Actively researching for a Summer 2024 internship opportunity.",
+        "🎯 Eager to embrace new challenges and drive innovation.",        
       ],
       icon: React.createElement(FaReact),
-    date: "2021 - present",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    date: "Summer 2024",
+    tags: ["Quantum Field", "Machine learning", "Artifical Intelligence", "fullstack", ".NET environnement"],
 
   },
 ] as const;
@@ -88,10 +97,10 @@ export const projectsData = [
     title: "This Website - React",
     description:[
       "The reason for this projects was a to make sure i have portofolio website but to also explore other part of the react ecosystem. I used Next.js, TypeScript, Tailwind CSS and Framer Motion which i never used before.",
-      "I also used Vercel to deploy the website. But As you know I didnt use anything of this in my Internship at ubiosft I wanted to touche more of the more mainstream tech stacks.",
+      "I also used Vercel to deploy the website. But As you know I didnt use anything of this in my Internship at ubiosft I wanted to touch more of the more mainstream tech stacks.",
       "So after this projet and my internship i can pretty sure i can produce ecosystem agnostic code and i can adapt to any tech stack. which make any usage of website as interface a breeze.",
       "the website is also responsive and i used the mobile first approach. I wanted to make i use a tech stack that is common across the industry and that i can use in my internship.",
-      "I am aware of better new technologies like bun js and others "],
+    ],
     tags: ["Next.js", "Framer Motion", "TypeScript", "Tailwind CSS"],
     imageUrl: thiswebsiteImg,
   },
@@ -113,5 +122,5 @@ const allTags: string[] = [
   }, []),
 ];
 
-export const skillsData = [...new Set(allTags)];
+// export const skillsData = [...new Set(allTags)];
 

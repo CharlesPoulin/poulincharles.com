@@ -30,7 +30,7 @@ export default function Skills() {
       className="mb-28 mt-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      {/* <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
             className="bg-white borderBlack rounded-xl px-5 py-3 shadow-sm"
@@ -46,7 +46,7 @@ export default function Skills() {
             {skill}
           </motion.li>
         ))}
-      </ul>
+      </ul> */}
     </section>
   );
 }
