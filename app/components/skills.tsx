@@ -6,22 +6,21 @@ import { useSectionInView } from "../lib/hooks";
 import { motion } from "framer-motion";
 import { skillsData } from "../lib/data";
 
-const fadeInAnimationVariants = {
-  initial: {
+const listItemVariants = {
+  hidden: {
+    y: -20,
     opacity: 0,
-    y: 100,
   },
-  animate: (index: number) => ({
-    opacity: 1,
+  visible: (index: number) => ({
     y: 0,
+    opacity: 1,
     transition: {
-      delay: 0.05 * index,
+      delay: index * 0.1, // each item will have a delay of 0.1s more than the previous one
+      stiffness: 150,
+      type: "spring",
     },
   }),
 };
-
-
-
 export default function Skills() {
   const { ref } = useSectionInView("Skills", 0.4);
 
@@ -33,20 +32,18 @@ export default function Skills() {
     >
       <SectionHeading>My skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {
-          skillsData.map((skill: string, index: number): JSX.Element => (
-            <motion.li
-              key={index}
-              custom={index}
-              initial="initial"
-              animate="animate"
-              variants={fadeInAnimationVariants}
-              className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
-            >
-              {skill}
-            </motion.li>
-          ))
-        }
+        {skillsData.map((skill: string, index: number) => (
+          <motion.li
+            key={skill} // it's better to use unique values such as skill for keys
+            custom={index} // custom prop can be used to pass the delay multiplier
+            variants={listItemVariants} // passing the variant object we defined
+            initial="hidden" // initial state before the animation
+            animate="visible" // animate to the "visible" state
+            className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+          >
+            {skill}
+          </motion.li>
+        ))}
       </ul>
     </section>
   );
