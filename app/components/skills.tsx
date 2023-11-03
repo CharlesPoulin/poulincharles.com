@@ -2,9 +2,9 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-// import { skillsData } from "../lib/data";
 import { useSectionInView } from "../lib/hooks";
 import { motion } from "framer-motion";
+import { skillsData } from "../lib/data";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -20,6 +20,8 @@ const fadeInAnimationVariants = {
   }),
 };
 
+
+
 export default function Skills() {
   const { ref } = useSectionInView("Skills", 0.4);
 
@@ -30,23 +32,22 @@ export default function Skills() {
       className="mb-28 mt-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>My skills</SectionHeading>
-      {/* <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {skillsData.map((skill, index) => (
-          <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 shadow-sm"
-            key={index}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
-          >
-            {skill}
-          </motion.li>
-        ))}
-      </ul> */}
+      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+        {
+          skillsData.map((skill: string, index: number): JSX.Element => (
+            <motion.li
+              key={index}
+              custom={index}
+              initial="initial"
+              animate="animate"
+              variants={fadeInAnimationVariants}
+              className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+            >
+              {skill}
+            </motion.li>
+          ))
+        }
+      </ul>
     </section>
   );
 }

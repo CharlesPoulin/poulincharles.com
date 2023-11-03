@@ -7,6 +7,7 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import thiswebsiteImg from "@/public/thiswebsite.png";
 
+
 export const links = [
   {
     name: "Home",
@@ -114,13 +115,11 @@ export const projectsData = [
 ] as const;
 
 const allTags: string[] = [
-  ...experiencesData.reduce((tags: string[], experience) => {
-    return tags.concat(experience.tags);
-  }, []),
-  ...projectsData.reduce((tags: string[], project) => {
-    return tags.concat(project.tags);
-  }, []),
-];
+  ...experiencesData,
+  ...projectsData
+].reduce<string[]>((tags, item) => {
+  // item could be either an experience or a project, hence using any
+  return tags.concat(item.tags);
+}, []);
 
-// export const skillsData = [...new Set(allTags)];
-
+export const skillsData: string[] = Array.from(new Set(allTags));
