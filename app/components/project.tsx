@@ -28,13 +28,7 @@ export default function Projects() {
   )
 }
 
-type ProjectProps = {
-  title: string,
-  description: string,
-  tags: string[],
-  imageUrl: string,
-  projectUrl: string
-};
+type ProjectProps = (typeof projectsData)[number];
 
 function Project({
   title,

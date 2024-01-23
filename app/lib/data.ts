@@ -103,10 +103,11 @@ export const projectsData = [
     ],
     tags: ["Next.js", "Framer Motion", "TypeScript", "Tailwind CSS"],
     imageUrl: thiswebsiteImg,
+    projectUrl: "poulincharles.com",
   },
   {
     title: "Emotes in Teams - Microsoft Teams",
-    description:
+    description: 
       "Artificial intelligence (AI) is the ability of a computer program or a machine to think and learn. It is also a field of study which tries to make computers smart.",
     tags: [],
     imageUrl: corpcommentImg,
