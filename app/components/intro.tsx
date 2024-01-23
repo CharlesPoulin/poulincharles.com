@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import React, { useEffect } from 'react'
@@ -35,11 +36,11 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{type: "tween", duration: 0.2, delay: 0.2}}>
 
-        <span className="font-bold">Hello, I&apos;m Charles.</span>  I&apos;m currently pursuing a{" "}
-        <span className="font-bold">Software Engineering degree</span>  and I&apos;m in my{" "}
-        <span className="font-bold">2nd year</span> I have a strong passion for building
-        <span className="italic"> Artificial Intelligence, Machine Learning, and Video Games</span>. and I&apos;m also deeply interested in the {" "}
-        <span className="underline">Quantum Field</span>.
+        <span className="font-bold">Hello, I'm Charles.</span> I'm currently in my 2nd year in my 
+        <span className="font-bold"> Software Engineering degree</span>. With an unwavering enthusiasm for crafting innovative 
+        <span className="italic"> Tools and engaging with new technology</span>, I'm also captivated by the 
+        <span className="underline"> Quantum Field</span>.
+
       </motion.h1>
 
     <motion.div className='flex flex-col sm:flex-row justify-center gap-2 px-4 text-lg font-medium'

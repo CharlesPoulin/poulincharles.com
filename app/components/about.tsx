@@ -22,15 +22,13 @@ export default function About() {
   After gaining valuable experience through my first internship at Ubisoft, I knew that my <span className="font-medium">
     passion for programming was undeniable.</span>
      I thrive on challenges and problem-solving, and my core tech stack includes
-      <span className="font-medium">Python, C#, TypeScript, and C++</span>. 
+      <span className="font-medium"> C#, C++, Python, TypeScript and Javascript</span>. 
       I&apos;m always ready to learn and adapt to new technologies. Currently, 
-      I&apos;m seeking opportunities to contribute my skills and creativity as a software developer.
+      I&apos;m seeking opportunities to contribute my skills and creativity has an intern Fullstack or Back-End software developer.
 
   <span className="italic">When I&apos;m not immersed in code</span>, 
-  you&apos;ll find me exploring the fascinating world of Quantum AI 
-  or indulging my love for video games. I believe that the intersection of
-   AI and philosophy holds incredible potential, and I&apos;m eager to delve deeper into this realm.
-    Let&apos;s create something <span className="font-medium">remarkable</span> together!
+  you&apos;ll find me exploring the fascinating world of Quantum, AI 
+  or indulging my love for video games. 
 </p>
     </motion.section>
   );
