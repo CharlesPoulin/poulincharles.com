@@ -36,16 +36,16 @@ export const experiencesData = [
     title: "Bachelors Degree in Software Engineering at Université Laval",
     location: "Quebec, QC",
     description:[
-      "I'm a second-year Software Engineering student at Université Laval, passionate about A.I., game development, and quantum computing. ",
-      " I'm actively involved in AI-related groups and have a strong command of C++ and Python. ",
+      "I'm a 2nd year Software Engineering student at Université Laval, passionate about Back-End, A.I., game development, and quantum computing. ",
+      " I'm actively involved in AI-related groups and have a strong command of C# and .net Environnement. ",
       " My diverse interests drive my ambition to explore various career paths within the software engineering field."],
 
     bulletspoints: [
-        "Member of the Artifical Intelligence Club",
+        "Member of the Artifical Intelligence Club", "Excellence Letter from Vice-Doyen of studies"
       ],
     icon: React.createElement(LuGraduationCap),
     date: "Autumn 2022 - Winter 2026  4 years",
-    tags: ["C++", "Python", "Gantt", "agile"],
+    tags: ["C++", "Python", "Gantt", "agile", "Network", "DataBase", "UX"],
 
   },
   {
@@ -73,21 +73,20 @@ export const experiencesData = [
     description:
       "I am actively researching for a Summer 2024 internship",
       bulletspoints: [
-        "🚀 Proven track record of projets and practical experience.",
-        "🔍  Strong technical proficiency in C++/Rust, Python and .NET ecosystem",
-        "💡 Exceptional problem-solving skills, with a focus on innovation.",
-        "🌟 Demonstrated adaptability in diverse tech environments.",
-        "📈 Ready to contribute and learn at your compagny for a successful Summer 2024 internship",
-        "",
-        "📊 Hands-on experience with cutting-edge technologies like Blazor, D3.js, and more.",
-        "🌐 Effective in cross-functional teams, fostering project success.",
-        "💪 Agile Scrum and Test-Driven Development (TDD) enthusiast.",
-        "📜 Actively researching for a Summer 2024 internship opportunity.",
-        "🎯 Eager to embrace new challenges and drive innovation.",        
+        "🚀 Dynamic track record in delivering high-impact projects, leveraging advanced software development methodologies.",
+        "🔍 Proficient in full-stack development with expertise in C#, C++, Python, and the comprehensive .NET ecosystem.",
+        "🌟 Agile and adaptable in fast-paced, technologically diverse environments, consistently delivering quality solutions.",
+        "📈 Proactively seeking to contribute cutting-edge solutions and broaden technical horizons in a Summer 2024 internship.",
+        "📊 Experienced in modern web development with Blazor and interactive data visualization using D3.js.",
+        "🌐 Collaborative team player skilled in cross-functional coordination to drive project success and exceed KPIs.",
+        "💪 Passionate Agile Scrum practitioner, advocating for efficient and flexible project management.",
+        "📜 Actively pursuing a Summer 2024 internship to further enhance software engineering skills and industry knowledge.",
+        "🎯 Highly motivated to tackle new technological challenges and spearhead innovative solutions in a dynamic team setting.",
+        "🔗 Eager to integrate emergent technologies and trends to create impactful user-centric applications."
       ],
       icon: React.createElement(FaReact),
     date: "Summer 2024",
-    tags: ["Quantum Field", "Machine learning", "Artifical Intelligence", "fullstack", ".NET environnement"],
+    tags: ["Back-End", "learning", "Artifical Intelligence", "Fullstack", ".NET environnement"],
 
   },
 ] as const;
@@ -96,31 +95,34 @@ export const projectsData = [
   {
     title: "This Website - React",
     description:[
-      "The reason for this projects was a to make sure i have portofolio website but to also explore other part of the react ecosystem. I used Next.js, TypeScript, Tailwind CSS and Framer Motion which i never used before.",
-      "I also used Vercel to deploy the website. But As you know I didnt use anything of this in my Internship at ubiosft I wanted to touch more of the more mainstream tech stacks.",
-      "So after this projet and my internship i can pretty sure i can produce ecosystem agnostic code and i can adapt to any tech stack. which make any usage of website as interface a breeze.",
-      "the website is also responsive and i used the mobile first approach. I wanted to make i use a tech stack that is common across the industry and that i can use in my internship.",
+      "Developed a portfolio website exploring the React ecosystem, utilizing Next.js, TypeScript, Tailwind CSS, and Framer Motion for a responsive, mobile-first design. Deployed with Vercel."
     ],
     tags: ["Next.js", "Framer Motion", "TypeScript", "Tailwind CSS"],
     imageUrl: thiswebsiteImg,
-    projectUrl: "poulincharles.com",
+    projectUrl: "https://poulincharles.com/",
   },
   {
     title: "Emotes in Teams - Microsoft Teams",
-    description: 
-      "Artificial intelligence (AI) is the ability of a computer program or a machine to think and learn. It is also a field of study which tries to make computers smart.",
-    tags: [],
+    description: [
+      "Custom emote integration app. The app allows users to add custom emotes to their messages, by having a list of Emotes from the Website Catalogue",],
+    tags: ["Blazor", "Microsoft Teams"," C#", ".NET", "ASP.NET", "REST API", "Swagger", "TailwindCSS", "Azure", "MongoDb"],
+
     imageUrl: corpcommentImg,
     projectUrl: "https://www.loom.com/share/81f917d6bbf04305aa19e8a6c3f9e7ec?sid=35f042d4-af9f-4f5e-ad93-db45ac57c6b1",
   },
 ] as const;
 
-const allTags: string[] = [
-  ...experiencesData,
-  ...projectsData
-].reduce<string[]>((tags, item) => {
-  // item could be either an experience or a project, hence using any
-  return tags.concat(item.tags);
-}, []);
 
-export const skillsData: string[] = Array.from(new Set(allTags));
+// hardcode due to a bug
+const skillsArray = [
+  "C++", "PYTHON", "GANTT", "AGILE", "C#", "JAVASCRIPT", "MONGODB", ".NET ENVIRONNEMENT",
+  "XUNIT", "GITLAB", "MICROSOFT SQL SERVER", "BLAZOR", "D3.JS", "TEST-DRIVEN DEVELOPMENT (TDD)",
+  "CSS", "BACK-END", "LEARNING", "ARTIFICAL INTELLIGENCE", "FULLSTACK", ".NET ENVIRONNEMENT",
+  "NEXT.JS", "FRAMER MOTION", "TYPESCRIPT", "MICROSOFT TEAMS", "C#", ".NET",
+  "ASP.NET", "REST API", "SWAGGER", "TAILWINDCSS", "AZURE", "MONGODB"
+];
+
+// Removing duplicates using Set
+export const skillsData = Array.from(new Set(skillsArray));
+
+// Now uniqueSkills contains only unique values
