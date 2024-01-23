@@ -57,7 +57,6 @@ export const experiencesData = [
       "As a Tool Programmer Intern at Ubisoft, I've enhanced innersourcing processes, improved project visualization, and driven cross-platform demand. ",
       " My strong communication skills and adaptability, honed during my time at Ubisoft, have contributed to project success. I'm well-versed in Agile Scrum",
       "Embraced Test-Driven Development (TDD), collaborating with international teams, including colleagues from France, on D3.js integration in C#.",
-      "Notably, received callback offers from both my manager and Ubisoft, recognizing impactful contributions.",
     ],
     bulletspoints: [
       "Collaborated with cross-functional teams, learning from various specialties.",
@@ -106,11 +105,12 @@ export const projectsData = [
     imageUrl: thiswebsiteImg,
   },
   {
-    title: "Under construction",
+    title: "Emotes in Teams - Microsoft Teams",
     description:
       "Artificial intelligence (AI) is the ability of a computer program or a machine to think and learn. It is also a field of study which tries to make computers smart.",
     tags: [],
     imageUrl: corpcommentImg,
+    projectUrl: "https://www.loom.com/share/81f917d6bbf04305aa19e8a6c3f9e7ec?sid=35f042d4-af9f-4f5e-ad93-db45ac57c6b1",
   },
 ] as const;
 
